@@ -18,7 +18,7 @@ import java.util.List;
 
 @DataJpaTest(includeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = org.springframework.stereotype.Service.class))
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class CustomerRepositoryTests {
+class CustomerRepositoryTests {
 
     @Autowired
     private CustomerRepository customerRepository;

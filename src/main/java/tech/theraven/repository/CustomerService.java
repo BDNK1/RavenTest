@@ -30,7 +30,7 @@ public class CustomerService {
         customer.setUpdated(LocalDateTime.now());
         try {
             return repo.save(customer);
-        } catch (DataAccessException e) {
+        } catch (DataAccessException | IllegalArgumentException e ) {
             e.printStackTrace();
             throw new IllegalArgumentException();
         }

@@ -41,7 +41,7 @@ public class CustomerDAO {
             return customersList;
 
         } catch (SQLException e) {
-            System.out.println("sql exception");
+            e.printStackTrace();
             return Collections.emptyList();
         }
     }
@@ -109,7 +109,7 @@ public class CustomerDAO {
 
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new IllegalStateException();
+            throw new IllegalArgumentException();
         }
     }
 }

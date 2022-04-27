@@ -15,7 +15,7 @@ import java.util.List;
 @ActiveProfiles("test")
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class CustomerDAOTests {
+class CustomerDAOTests {
 
     @Autowired
     private CustomerDAO customerDAO;
